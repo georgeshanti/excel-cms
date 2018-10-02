@@ -1,0 +1,62 @@
+{
+  "identity": "competition",
+  "connection": "",
+  "displayedAttribute": "",
+  "schema": true,
+  "attributes": {
+    "active":{
+      "type": "boolean"
+    },
+    "name": {
+      "type": "string"
+    },
+    "codename": {
+      "type": "string"
+    },
+    "about": {
+      "type": "string"
+    },
+    "format": {
+      "type": "string"
+    },
+    "rules": {
+      "type": "string"
+    },
+    "contact": {
+      "type": "string"
+    },
+    "prize": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "time": {
+      "type": "string"
+    },
+    "venue": {
+      "type": "string"
+    },
+    "img": {
+      "type": "string"
+    },
+    "buttons": {
+      "type": "json"
+    },
+    "createdBy": {
+      "model": "user"
+    },
+    "updatedBy": {
+      "model": "user"
+    },
+    "contributors": {
+      "collection": "user",
+      "via": "competitions"
+    }
+  },
+  "autoCreatedAt": true,
+  "autoUpdatedAt": true
+}

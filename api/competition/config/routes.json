@@ -1,0 +1,55 @@
+{
+  "routes": {
+    "GET /competition": {
+      "controller": "Competition",
+      "action": "find",
+      "policies": [
+      ]
+    },
+    "GET /competition/:id": {
+      "controller": "Competition",
+      "action": "findOne",
+      "policies": [
+      ]
+    },
+    "POST /competition": {
+      "controller": "Competition",
+      "action": "create",
+      "policies": [
+        "isAuthorized",
+        "addDataCreate"
+      ]
+    },
+    "PUT /competition/:id": {
+      "controller": "Competition",
+      "action": "update",
+      "policies": [
+        "isAuthorized",
+        "addDataUpdate"
+      ]
+    },
+    "DELETE /competition/:id": {
+      "controller": "Competition",
+      "action": "destroy",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "POST /competition/:parentId/:relation": {
+      "controller": "Competition",
+      "action": "add",
+      "policies": [
+        "isAuthorized",
+        "addDataCreate"
+      ]
+    },
+    "DELETE /competition/:parentId/:relation/:id": {
+      "controller": "Competition",
+      "action": "remove",
+      "policies": [
+        "isAuthorized",
+        "addDataUpdate"
+      ]
+    }
+  }
+}

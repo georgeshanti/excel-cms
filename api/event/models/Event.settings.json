@@ -1,0 +1,38 @@
+{
+  "identity": "event",
+  "connection": "",
+  "displayedAttribute": "",
+  "schema": true,
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "type":{
+      "type": "string"
+    },
+    "codename": {
+      "type": "string"
+    },
+    "details": {
+      "type": "string"
+    },
+    "img": {
+      "type": "string"
+    },
+    "imgs": {
+      "type": "json"
+    },
+    "createdBy": {
+      "model": "user"
+    },
+    "updatedBy": {
+      "model": "user"
+    },
+    "contributors": {
+      "collection": "user",
+      "via": "events"
+    }
+  },
+  "autoCreatedAt": true,
+  "autoUpdatedAt": true
+}
