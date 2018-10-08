@@ -43,6 +43,9 @@
     "img": {
       "type": "string"
     },
+    "color": {
+      "type": "string"
+    },
     "buttons": {
       "type": "json"
     },

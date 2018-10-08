@@ -13,6 +13,9 @@
     "codename": {
       "type": "string"
     },
+    "website": {
+      "type": "string"
+    },
     "details": {
       "type": "string"
     },
