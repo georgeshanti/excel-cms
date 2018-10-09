@@ -53,6 +53,10 @@
     "events": {
       "collection": "event",
       "via": "contributors"
+    },
+    "contacts": {
+      "collection": "contact",
+      "via": "contributors"
     }
   },
   "autoCreatedAt": true,
