@@ -25,7 +25,7 @@
     "contact": {
       "type": "string"
     },
-    "contact-info": {
+    "contactInfo": {
       "type": "json"
     },
     "prize": {
