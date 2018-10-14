@@ -57,6 +57,10 @@
     "contacts": {
       "collection": "contact",
       "via": "contributors"
+    },
+    "sponsors": {
+      "collection": "sponsor",
+      "via": "contributors"
     }
   },
   "autoCreatedAt": true,

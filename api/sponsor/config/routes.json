@@ -1,0 +1,57 @@
+{
+  "routes": {
+    "GET /sponsor": {
+      "controller": "Sponsor",
+      "action": "find",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "GET /sponsor/:id": {
+      "controller": "Sponsor",
+      "action": "findOne",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "POST /sponsor": {
+      "controller": "Sponsor",
+      "action": "create",
+      "policies": [
+        "isAuthorized",
+        "addDataCreate"
+      ]
+    },
+    "PUT /sponsor/:id": {
+      "controller": "Sponsor",
+      "action": "update",
+      "policies": [
+        "isAuthorized",
+        "addDataUpdate"
+      ]
+    },
+    "DELETE /sponsor/:id": {
+      "controller": "Sponsor",
+      "action": "destroy",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "POST /sponsor/:parentId/:relation": {
+      "controller": "Sponsor",
+      "action": "add",
+      "policies": [
+        "isAuthorized",
+        "addDataCreate"
+      ]
+    },
+    "DELETE /sponsor/:parentId/:relation/:id": {
+      "controller": "Sponsor",
+      "action": "remove",
+      "policies": [
+        "isAuthorized",
+        "addDataUpdate"
+      ]
+    }
+  }
+}
