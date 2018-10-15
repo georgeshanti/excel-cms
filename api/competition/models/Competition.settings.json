@@ -34,7 +34,10 @@
     "registration":{
       "type": "string"
     },
-    "category": {
+    "department": {
+      "type": "string"
+    },
+    "catgeory": {
       "type": "string"
     },
     "date": {
