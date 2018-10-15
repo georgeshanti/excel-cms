@@ -31,6 +31,9 @@
     "prize": {
       "type": "string"
     },
+    "registration":{
+      "type": "string"
+    },
     "category": {
       "type": "string"
     },
