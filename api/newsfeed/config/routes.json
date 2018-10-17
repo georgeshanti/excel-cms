@@ -1,0 +1,57 @@
+{
+  "routes": {
+    "GET /newsfeed": {
+      "controller": "Newsfeed",
+      "action": "find",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "GET /newsfeed/:id": {
+      "controller": "Newsfeed",
+      "action": "findOne",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "POST /newsfeed": {
+      "controller": "Newsfeed",
+      "action": "create",
+      "policies": [
+        "isAuthorized",
+        "addDataCreate"
+      ]
+    },
+    "PUT /newsfeed/:id": {
+      "controller": "Newsfeed",
+      "action": "update",
+      "policies": [
+        "isAuthorized",
+        "addDataUpdate"
+      ]
+    },
+    "DELETE /newsfeed/:id": {
+      "controller": "Newsfeed",
+      "action": "destroy",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "POST /newsfeed/:parentId/:relation": {
+      "controller": "Newsfeed",
+      "action": "add",
+      "policies": [
+        "isAuthorized",
+        "addDataCreate"
+      ]
+    },
+    "DELETE /newsfeed/:parentId/:relation/:id": {
+      "controller": "Newsfeed",
+      "action": "remove",
+      "policies": [
+        "isAuthorized",
+        "addDataUpdate"
+      ]
+    }
+  }
+}

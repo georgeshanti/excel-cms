@@ -73,6 +73,10 @@
     "day_threes": {
       "collection": "day_three",
       "via": "contributors"
+    },
+    "newsfeeds": {
+      "collection": "newsfeed",
+      "via": "contributors"
     }
   },
   "autoCreatedAt": true,

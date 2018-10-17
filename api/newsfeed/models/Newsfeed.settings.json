@@ -1,0 +1,29 @@
+{
+  "identity": "newsfeed",
+  "connection": "",
+  "displayedAttribute": "",
+  "schema": true,
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "createdBy": {
+      "model": "user"
+    },
+    "updatedBy": {
+      "model": "user"
+    },
+    "contributors": {
+      "collection": "user",
+      "via": "newsfeeds"
+    }
+  },
+  "autoCreatedAt": true,
+  "autoUpdatedAt": true
+}
