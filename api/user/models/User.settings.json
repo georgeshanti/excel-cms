@@ -61,6 +61,18 @@
     "sponsors": {
       "collection": "sponsor",
       "via": "contributors"
+    },
+    "day_ones": {
+      "collection": "day_one",
+      "via": "contributors"
+    },
+    "day_twos": {
+      "collection": "day_two",
+      "via": "contributors"
+    },
+    "day_threes": {
+      "collection": "day_three",
+      "via": "contributors"
     }
   },
   "autoCreatedAt": true,

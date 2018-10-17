@@ -1,0 +1,57 @@
+{
+  "routes": {
+    "GET /day_three": {
+      "controller": "Day_three",
+      "action": "find",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "GET /day_three/:id": {
+      "controller": "Day_three",
+      "action": "findOne",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "POST /day_three": {
+      "controller": "Day_three",
+      "action": "create",
+      "policies": [
+        "isAuthorized",
+        "addDataCreate"
+      ]
+    },
+    "PUT /day_three/:id": {
+      "controller": "Day_three",
+      "action": "update",
+      "policies": [
+        "isAuthorized",
+        "addDataUpdate"
+      ]
+    },
+    "DELETE /day_three/:id": {
+      "controller": "Day_three",
+      "action": "destroy",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "POST /day_three/:parentId/:relation": {
+      "controller": "Day_three",
+      "action": "add",
+      "policies": [
+        "isAuthorized",
+        "addDataCreate"
+      ]
+    },
+    "DELETE /day_three/:parentId/:relation/:id": {
+      "controller": "Day_three",
+      "action": "remove",
+      "policies": [
+        "isAuthorized",
+        "addDataUpdate"
+      ]
+    }
+  }
+}

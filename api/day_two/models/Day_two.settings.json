@@ -1,0 +1,35 @@
+{
+  "identity": "day_two",
+  "connection": "",
+  "displayedAttribute": "",
+  "schema": true,
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "start": {
+      "type": "float"
+    },
+    "end": {
+      "type": "float"
+    },
+    "venue": {
+      "type": "string"
+    },
+    "department": {
+      "type": "string"
+    },
+    "createdBy": {
+      "model": "user"
+    },
+    "updatedBy": {
+      "model": "user"
+    },
+    "contributors": {
+      "collection": "user",
+      "via": "day_twos"
+    }
+  },
+  "autoCreatedAt": true,
+  "autoUpdatedAt": true
+}
