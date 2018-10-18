@@ -25,6 +25,9 @@
     "imgs": {
       "type": "json"
     },
+    "buttons": {
+      "type": "json"
+    },
     "createdBy": {
       "model": "user"
     },
