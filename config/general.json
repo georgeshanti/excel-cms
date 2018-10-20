@@ -8,7 +8,7 @@
   },
   "prefix": "",
   "blueprints": {
-    "defaultLimit": 30,
+    "defaultLimit": 100,
     "populate": true
   },
   "graphql": {

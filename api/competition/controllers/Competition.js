@@ -18,24 +18,24 @@ module.exports = {
     this.model = model;
     try {
       var entries = yield strapi.hooks.blueprints.find(this);
-      // for (var i = entries.length - 1; i >= 0; i--){
-      //   var entry = entries[i]
-      //   if(entry['active']!=true){
-      //     entries.splice(i, 1)
-      //   }
-      //   else{
-      //     delete entry['createdBy']
-      //     delete entry['updatedBy']
-      //     delete entry['createdAt']
-      //     delete entry['updatedAt']
-      //     delete entry['about']
-      //     delete entry['format']
-      //     delete entry['rules']
-      //     delete entry['contact']
-      //     delete entry['prize']
-      //     delete entry['contributors']
-      //   }
-      // }
+      for (var i = entries.length - 1; i >= 0; i--){
+        var entry = entries[i]
+        if(entry['active']!=true){
+          entries.splice(i, 1)
+        }
+        else{
+          delete entry['createdBy']
+          delete entry['updatedBy']
+          delete entry['createdAt']
+          delete entry['updatedAt']
+          delete entry['about']
+          delete entry['format']
+          delete entry['rules']
+          delete entry['contact']
+          delete entry['prize']
+          delete entry['contributors']
+        }
+      }
       this.body = entries;
     } catch (err) {
       this.body = err;
